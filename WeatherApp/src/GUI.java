@@ -73,10 +73,21 @@ public class GUI extends JFrame {
 
         add(humidityImage);
 
-        JLabel humidityText = new JLabel("Humidity\n100%");
-        humidityText.setBounds(90, 500, 85, 55);
+        JLabel humidityText = new JLabel("<html><b>Humidity</b> 100%</html>");
+        humidityText.setBounds(90, 500, 80, 55);
         humidityText.setFont(new Font("SansSerif", Font.BOLD, 16));
 
         add(humidityText);
+
+        JLabel windSpeedImage = new JLabel(getImage("src/images/wind.png"));
+        windSpeedImage.setBounds(240, 500, 74, 66);
+
+        add(windSpeedImage);
+
+        JLabel windSpeedText = new JLabel("<html><b>Windspeed</b> 15km/h</html>");
+        windSpeedText.setBounds(320, 500, 97, 55);
+        windSpeedText.setFont(new Font("SansSerif", Font.BOLD, 16));
+
+        add(windSpeedText);
     }
 }
